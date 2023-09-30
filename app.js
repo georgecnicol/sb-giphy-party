@@ -2,6 +2,10 @@
 
 const baseURL = 'https://api.giphy.com/v1/gifs/search';
 const myKey = '5chVR6pIg0rKbSz6yvg57ViwMRx9rFx1';
+// yes, you aren't supposed to include creds. In this case, it is a non-production API key with limited
+// bandwidth on a throwaway account. I won't be using it for anything else, and it serves to power this
+// demo. so.....there it is.
+
 const imageContainer = $('#images-container');
 maxResults = 35; // we are going to choose a random element from the top number of maxResults so we can reshuffle
 
