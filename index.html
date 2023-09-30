@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&amp;family=Mukta:wght@300" rel="stylesheet">
+  <link href="app.css" rel="stylesheet">
+  <title>Giphy Party!</title>
+</head>
+
+<body>
+  <!-- dark mode stuff -->
+  <ul id="header">
+    <li id="dark-mode-button"><div class = 'toggle-switch' >
+      <label class="toggle" id="toggle-label" for="checkbox">
+        <input type="checkbox" id="checkbox">
+        <span class="slider"></span>
+        <span class="toggle-labels" data-on="off" data-off="on"></span>
+      </label>
+      <span id="dmlabel">dark mode</span>
+      </div>
+    </li>
+
+    </ul>
+
+<div id="top">
+<h1 id="title">Giphy Party!</h1>
+Shuffle a gif by clicking on it.
+</div>
+
+<div id="form-container">
+  <form id="form">
+    <input type="text" id="search-box" placeholder="Enter search term">
+    <input type="submit" id="submit-button" value="Search Giphy!">
+  </form>
+
+  <button id="remove-button">Remove Images</button>
+</div>
+<div id="images-container">
+
+</div>
+
+<footer id="footer">
+  <a href="https://github.com/georgecnicol/">github repo</a>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
